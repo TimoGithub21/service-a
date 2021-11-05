@@ -1,0 +1,14 @@
+name: schoen deployen 
+
+on: 
+  push: 
+      branches: ["main"]
+
+jobs:
+  build-deploy:
+      runs-on: ubuntu-latest
+      
+      steps:
+      - uses: actions/checkout@v2 #github actions di
+      - uses: actions/setup-node@v2
+      - run: npm install
