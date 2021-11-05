@@ -25,4 +25,4 @@ jobs:
           project_id: modern-tech-training-331108
           deliverables: app.yaml
           
-    - run: curl "${{ steps.deploy.outputs.url }/hello/foo"
+    - run: curl "${{ steps.deploy.outputs.url }}/hello/foo"
